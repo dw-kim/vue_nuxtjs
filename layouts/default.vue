@@ -1,20 +1,8 @@
 <template>
   <div>
-    <top/>
     <Nuxt />
   </div>
 </template>
-
-<script lang="ts">
-import Top from '../components/main/Top.vue' 
-
-export default {
-  components:{
-    Top
-  }
-}
-</script>
-
 
 <style>
 html {

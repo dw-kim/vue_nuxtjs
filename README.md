@@ -1,4 +1,4 @@
-# nextjs_express
+# nuxtjs_express
 
 ## Build Setup
 

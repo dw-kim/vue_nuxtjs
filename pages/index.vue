@@ -2,7 +2,8 @@
   <div class="container">
     <div>
       <h1 class="title">
-        nuxtjs_express
+        nuxtjs_study #01
+        coupang_ver
       </h1>
     </div>
   </div>

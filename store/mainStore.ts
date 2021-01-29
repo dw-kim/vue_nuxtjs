@@ -34,11 +34,14 @@ const mainStore = {
     getters: {
         getMain(state:any) {
             return state.main;
-        }
+        },
     },
     mutations: {
         SET_MAIN_CATEGORY_SHOW(state:any, flag:boolean) {
             state.main.category.showFlag = flag;
+        },
+        SET_SEARCH_SELECTOR_CLEAR(state:any) {
+            state.main.search.selector = []
         }
     },
     actions: {

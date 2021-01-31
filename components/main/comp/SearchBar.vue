@@ -42,7 +42,12 @@ export default class SearchBar extends Vue {
     selectorChangeHandler(selectedItem) {
         let url = selectedItem.currentTarget.selectedOptions[0].value;
         if(isNull(url)) {
-            this.$router.push({path: url})
+            // this.$router.push({path: url})
+            let data = {
+                router: this.$router,
+                url: url
+            }
+            this.$store.dispatch("mainStore/pageChange", data)
         }
         // $router.push()  //  현재 라우트를 변경
         // $router.replace()  //  history 객체에 남기지 않고 라우트를 변경

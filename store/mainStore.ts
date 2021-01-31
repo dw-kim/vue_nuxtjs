@@ -1,3 +1,4 @@
+
 const mainStore = {
     namespaced: true,
     state: {
@@ -45,9 +46,24 @@ const mainStore = {
         }
     },
     actions: {
-        pageChange: function(parameter:any) {
-            
-            // .$router.push({path: url})
+        pageChange: (
+            {
+              commit,
+              dispatch,
+              getters,
+              rootGetters
+            }: {
+              commit: Function;
+              dispatch: Function;
+              getters: { [key: string]: Function };
+              rootGetters: { [key: string]: Function };
+            },
+            data : {
+                router:any,
+                url:string
+            }
+        ) => {
+            data.router.push({path: data.url})
         }
     }
 };

@@ -40,12 +40,15 @@ const mainStore = {
         SET_MAIN_CATEGORY_SHOW(state:any, flag:boolean) {
             state.main.category.showFlag = flag;
         },
-        SET_SEARCH_SELECTOR_CLEAR(state:any) {
-            state.main.search.selector = []
+        SET_SEARCH_SELECTOR_CLEAR(state:any, value:any) {
+            state.main.search.selector = value;
         }
     },
     actions: {
-
+        pageChange: function(parameter:any) {
+            
+            // .$router.push({path: url})
+        }
     }
 };
 export default mainStore;

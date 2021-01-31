@@ -1,13 +1,20 @@
 <template>
-    <div class="container">
-        TEST PAGE
+    <div class="container" >
+        <div @click="clickHandler($event)">
+            TEST PAGE
+        </div>
     </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+
 export default {
-    
+
+    methods: {
+        clickHandler : function (event:Event) {
+        }
+    }
 }
 </script>
 
